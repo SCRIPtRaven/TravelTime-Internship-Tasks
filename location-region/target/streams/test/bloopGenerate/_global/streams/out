@@ -1,0 +1,4 @@
+[debug] [location-region-test] Classpath dependencies List()
+[debug] [location-region-test] Dependencies from configurations List(location-region)
+[debug] Bloop wrote the configuration of project 'location-region-test' to 'C:\Users\IT_WORK\Documents\GitHub\TravelTime-Internship-Tasks\location-region\.bloop\location-region-test.json'
+[success] Generated .bloop\location-region-test.json
