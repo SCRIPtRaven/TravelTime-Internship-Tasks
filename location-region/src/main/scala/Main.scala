@@ -27,32 +27,16 @@ object Main extends App {
     matchedRegions
   }
 
-  def isLocationInRegion(location: (Double, Double), region: Seq[(Double, Double)]): Boolean = {
-    val x = location._1
-    val y = location._2
-    var isInside = false
-
-    var i = 0
-    var j = region.size - 1
-    while (i < region.size) {
-      val xi = region(i)._1
-      val yi = region(i)._2
-      val xj = region(j)._1
-      val yj = region(j)._2
-
-      // Raycasting algorithm
-      val intersect = ((yi > y) != (yj > y)) &&
-        (x < (xj - xi) * (y - yi) / (yj - yi) + xi)
-
-      if (intersect) isInside = !isInside
-      j = i
-      i += 1
-    }
-    isInside
+  def isLocationInRegion(point: (Double, Double), polygon: Seq[(Double, Double)]): Boolean = {
+    polygon.zip(polygon.tail :+ polygon.head).count { case ((x1, y1), (x2, y2)) =>
+      (point._2 > Math.min(y1, y2)) && (point._2 <= Math.max(y1, y2)) &&
+        (point._1 <= Math.max(x1, x2)) && (y1 != y2) &&
+        (point._1 <= (x2 - x1) * (point._2 - y1) / (y2 - y1) + x1)
+    } % 2 != 0
   }
 
-  def outputToJson(file: String, results: Seq[MatchedRegions]): Unit = {
-    os.write.over(os.pwd / file, upickle.default.write(results, indent = 2))
+  def outputToJson(file: String, directory: os.Path, results: Seq[MatchedRegions]): Unit = {
+    os.write.over(directory / file, upickle.default.write(results, indent = 2))
   }
 
   val workingDirectory: os.Path = os.pwd
@@ -61,5 +45,5 @@ object Main extends App {
   val regions: Seq[Region] = parseJson[Region]("regions.json", workingDirectory)
 
   val results = matching(locations, regions)
-  outputToJson("results.json", results)
+  outputToJson("results.json", workingDirectory, results)
 }
