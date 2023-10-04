@@ -24,12 +24,11 @@ version := "1.0"
 
 // Want to use a published library in your project?
 // You can define other libraries as dependencies in your build like this:
-
 libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "2.1.1"
 libraryDependencies += "com.lihaoyi" %% "upickle" % "3.1.3"
 libraryDependencies += "com.lihaoyi" %% "os-lib" % "0.9.1"
 
-
+assemblyOutputPath in assembly := file("./location-region-1.0.jar")
 assemblyOption in assembly := (assemblyOption in assembly).value.copy(includeScala = true)
 
 assemblyMergeStrategy in assembly := {
