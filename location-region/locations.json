@@ -28,7 +28,7 @@
     ]
   },
   {
-    "name": "location5",
+    "name": "location_shared",
     "coordinates": [
       24.01824830931949,
       54.90237894285653
@@ -39,6 +39,20 @@
     "coordinates": [
       24.47678240050834,
       55.15818800439831
+    ]
+  },
+  {
+    "name": "multi_poly_location1",
+    "coordinates": [
+      21.111737200732354,
+      55.54456937538671
+    ]
+  },
+  {
+    "name": "multi_poly_location2",
+    "coordinates": [
+      21.15737200732354,
+      55.74456937538671
     ]
   }
 ]
