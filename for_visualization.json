@@ -143,6 +143,17 @@
           "coordinates": [23.85255556998709, 54.87130112002856]
         }
       },
+	  {
+        "type": "Feature",
+        "properties": {
+          "name": "location_on_edge",
+          "marker-color": "red"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [25.13573603154873, 54.67922829209249]
+        }
+      },
       {
         "type": "Feature",
         "properties": {
