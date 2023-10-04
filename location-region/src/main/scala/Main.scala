@@ -39,11 +39,18 @@ object Main extends App {
     os.write.over(directory / file, upickle.default.write(results, indent = 2))
   }
 
+  val argMap = args.map(arg => {
+    val pair = arg.split("=")
+    pair(0) -> pair(1)
+  }).toMap
+  val regionsFile = argMap.getOrElse("--regions", "regions.json")
+  val locationsFile = argMap.getOrElse("--locations", "locations.json")
+  val outputFile = argMap.getOrElse("--output", "results.json")
+
   val workingDirectory: os.Path = os.pwd
 
-  val locations: Seq[Location] = parseJson[Location]("locations.json", workingDirectory)
-  val regions: Seq[Region] = parseJson[Region]("regions.json", workingDirectory)
-
+  val locations: Seq[Location] = parseJson[Location](locationsFile, workingDirectory)
+  val regions: Seq[Region] = parseJson[Region](regionsFile, workingDirectory)
   val results = matching(locations, regions)
-  outputToJson("results.json", workingDirectory, results)
+  outputToJson(outputFile, workingDirectory, results)
 }

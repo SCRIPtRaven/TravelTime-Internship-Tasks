@@ -1,2 +1,27 @@
 [0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = C:\Users\IT_WORK\Documents\GitHub\TravelTime-Internship-Tasks\location-region\target\scala-2.12\classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = C:\Users\IT_WORK\Documents\GitHub\TravelTime-Internship-Tasks\location-region\target\scala-2.12\classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anon$1$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anon$7$$anon$8.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$Location$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anon$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$Region$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$MatchedRegions$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$MatchedRegions.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anon$4$$anon$5.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anon$6.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anon$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anon$7.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$Location.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$Region.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$$anon$9.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: C:\Users\IT_WORK\Documents\GitHub\TravelTime-Internship-Tasks\location-region\target\scala-2.12\classes.bak[0m

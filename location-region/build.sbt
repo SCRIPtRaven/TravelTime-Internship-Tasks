@@ -13,7 +13,7 @@ scalaVersion := "2.12.18"
 
 // It's possible to define many kinds of settings, such as:
 
-name := "hello-world"
+name := "location-region"
 organization := "ch.epfl.scala"
 version := "1.0"
 
@@ -28,6 +28,15 @@ version := "1.0"
 libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "2.1.1"
 libraryDependencies += "com.lihaoyi" %% "upickle" % "3.1.3"
 libraryDependencies += "com.lihaoyi" %% "os-lib" % "0.9.1"
+
+
+assemblyOption in assembly := (assemblyOption in assembly).value.copy(includeScala = true)
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}
+mainClass in assembly := Some("Main")
 
 // Here, `libraryDependencies` is a set of dependencies, and by using `+=`,
 // we're adding the scala-parser-combinators dependency to the set of dependencies
