@@ -51,6 +51,7 @@ object Main extends App {
 
   val locations: Seq[Location] = parseJson[Location](locationsFile, workingDirectory)
   val regions: Seq[Region] = parseJson[Region](regionsFile, workingDirectory)
+  
   val results = matching(locations, regions)
   outputToJson(outputFile, workingDirectory, results)
 }
