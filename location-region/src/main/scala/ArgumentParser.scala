@@ -1,8 +1,21 @@
+import java.nio.file.{Files, Paths}
+
 object ArgumentParser {
   def parseArgs(args: Array[String]): Map[String, String] = {
-    args.map(arg => {
+    val parsedArgs = args.flatMap(arg => {
       val pair = arg.split("=")
-      pair(0) -> pair(1)
+      if (pair.length == 2) Some(pair(0).stripPrefix("--") -> pair(1))
+      else None
     }).toMap
+
+    parsedArgs.foreach {
+      case (key, value) if key == "regions" || key == "locations" || key == "output" =>
+        if (!Files.exists(Paths.get(value))) {
+          println(s"File does not exist: $value for key: $key")
+        }
+      case _ =>
+    }
+
+    parsedArgs
   }
 }
