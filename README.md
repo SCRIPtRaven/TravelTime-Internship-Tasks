@@ -9,5 +9,5 @@ To run this program from a terminal:
 
 To compile and run the program:
 1. Navigate to the root directory of the project (located in the folder location-region)
-2. Run "sbt compile"
-3. Run "sbt run"
+2. Run 'sbt compile'
+3. Run 'sbt run'

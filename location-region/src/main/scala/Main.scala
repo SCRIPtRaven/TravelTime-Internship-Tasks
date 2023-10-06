@@ -4,16 +4,10 @@ import os._
 import scala.util.{Try, Success, Failure}
 
 object Main extends App {
-  case class Coordinate(x: Double, y: Double)
-  case class Polygon(coordinates: List[Coordinate])
-  case class MultiPolygon(polygons: List[Polygon])
-  case class Location(name: String, coordinates: Coordinate)
-  case class Region(name: String, coordinates: MultiPolygon)
+  case class Location(name: String, coordinates: (Double, Double))
+  case class Region(name: String, coordinates: Seq[Seq[(Double, Double)]])
   case class MatchedRegions(region: String, matchedLocations: Seq[String])
 
-  implicit val coordinateRw: ReadWriter[Coordinate] = macroRW
-  implicit val polygonRw: ReadWriter[Polygon] = macroRW
-  implicit val multiPolygonRw: ReadWriter[MultiPolygon] = macroRW
   implicit val locationRw: ReadWriter[Location] = macroRW
   implicit val regionRw: ReadWriter[Region] = macroRW
   implicit val matchedRw: ReadWriter[MatchedRegions] = macroRW
