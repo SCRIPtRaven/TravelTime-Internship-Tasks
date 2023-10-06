@@ -1,4 +1,4 @@
-[warn] sbt-assembly-1.1.0-sources.jar no longer exists at C:\Users\IT_WORK\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\eed3si9n\sbt-assembly_2.12_1.0\1.1.0\sbt-assembly-1.1.0-sources.jar
+[warn] sbt-assembly-1.1.0-sources.jar no longer exists at C:\Users\offic\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\eed3si9n\sbt-assembly_2.12_1.0\1.1.0\sbt-assembly-1.1.0-sources.jar
 [debug] not up to date. inChanged = false, force = false
-[debug] Updating ProjectRef(uri("file:/C:/Users/offic/Documents/GitHub/TravelTime-Internship-Tasks/location-region/project/"), "location-region-build")...
-[debug] Done updating ProjectRef(uri("file:/C:/Users/offic/Documents/GitHub/TravelTime-Internship-Tasks/location-region/project/"), "location-region-build")
+[debug] Updating ProjectRef(uri("file:/C:/Users/IT_WORK/Documents/GitHub/TravelTime-Internship-Tasks/location-region/project/"), "location-region-build")...
+[debug] Done updating ProjectRef(uri("file:/C:/Users/IT_WORK/Documents/GitHub/TravelTime-Internship-Tasks/location-region/project/"), "location-region-build")

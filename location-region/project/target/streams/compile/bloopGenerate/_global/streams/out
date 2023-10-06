@@ -1,4 +1,4 @@
-[0m[[0m[0mdebug[0m] [0m[0m[location-region-build] Classpath dependencies List()[0m
-[0m[[0m[0mdebug[0m] [0m[0m[location-region-build] Dependencies from configurations List()[0m
-[0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'location-region-build' to 'C:\Users\offic\Documents\GitHub\TravelTime-Internship-Tasks\location-region\project\.bloop\location-region-build.json'[0m
-[0m[[0m[32msuccess[0m] [0m[0mGenerated .bloop\location-region-build.json[0m
+[debug] [location-region-build] Classpath dependencies List()
+[debug] [location-region-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'location-region-build' to 'C:\Users\IT_WORK\Documents\GitHub\TravelTime-Internship-Tasks\location-region\project\.bloop\location-region-build.json'
+[success] Generated .bloop\location-region-build.json
