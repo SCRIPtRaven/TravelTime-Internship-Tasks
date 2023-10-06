@@ -9,7 +9,7 @@ object ArgumentParser {
     }).toMap
 
     parsedArgs.foreach {
-      case (key, value) if key == "regions" || key == "locations" || key == "output" =>
+      case (key, value) if key == "regions" || key == "locations" =>
         if (!Files.exists(Paths.get(value))) {
           println(s"File does not exist: $value for key: $key")
         }

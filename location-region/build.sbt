@@ -9,6 +9,8 @@ name := "location-region"
 libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "2.1.1"
 libraryDependencies += "com.lihaoyi" %% "upickle" % "3.1.3"
 libraryDependencies += "com.lihaoyi" %% "os-lib" % "0.9.1"
+libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.17"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.17" % "test"
 
 // You can use Scaladex, an index of all known published Scala libraries. There,
 // after you find the library you want, you can just copy/paste the dependency
